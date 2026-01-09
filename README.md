@@ -54,6 +54,9 @@ task.run()
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute, please read our [contributing guidelines](CONTRIBUTING.md) to get started.
+-   **💬 [Discord](https://discord.com/invite/jc4xtF58Ve):** Chat with us on Discord for real-time support and discussions.
+-   **🐦 [Twitter](https://twitter.com/ishandutta2007):** Follow us on Twitter for the latest news and updates.
+-   **🐦 [Github](https://github.com/ishandutta2007):** Follow me on Github for the latest commits and updates.
 
 ## License
 
