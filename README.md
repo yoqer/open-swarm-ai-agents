@@ -51,6 +51,11 @@ task = Task(
 task.run()
 ```
 
+### ✨ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ishandutta2007/open-swarm-ai-agents&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/open-swarm-ai-agents&type=date&legend=top-left)
+
+
 ## Contributing
 
 We welcome contributions from the community! If you'd like to contribute, please read our [contributing guidelines](CONTRIBUTING.md) to get started.
