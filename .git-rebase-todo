@@ -1,0 +1,7 @@
+# This is a .git-rebase-todo file.
+# For more details, see git-rebase(1).
+
+# Example:
+# pick aaaaaaa Commit message 1
+# pick bbbbbbb Commit message 2
+# pick ccccccc Commit message 3

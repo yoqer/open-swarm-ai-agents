@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	echo "Pre-commit hook: Checking for large files..."
+	# Check for large files (e.g., > 1MB)
+	git diff --cached --name-only --diff-filter=A -z | xargs -0 du -b | awk '$1 > 1048576 {print "Error: File " $2 " is " $1 " bytes, which is larger than 1MB. Please consider using Git LFS." ; exit 1}'
+	if [ $? -ne 0 ]; then
+		exit 1
+	fi
+
+	echo "Pre-commit hook: Running linters..."
+	# Run linters (e.g., flake8, pylint, mypy)
+	# flake8 .
+	# if [ $? -ne 0 ]; then
+	# 	echo "Flake8 failed. Please fix the issues before committing."
+	# 	exit 1
+	# fi
+	# pylint src/
+	# if [ $? -ne 0 ]; then
+	# 	echo "Pylint failed. Please fix the issues before committing."
+	# 	exit 1
+	# fi
+	# mypy src/
+	# if [ $? -ne 0 ]; then
+	# 	echo "Mypy failed. Please fix the issues before committing."
+	# 	exit 1
+	# fi
+
+	echo "Pre-commit hook: Running tests..."
+	# Run tests
+	# pytest
+	# if [ $? -ne 0 ]; then
+	# 	echo "Tests failed. Please fix the issues before committing."
+	# 	exit 1
+	# fi
+fi
+
+exit 0

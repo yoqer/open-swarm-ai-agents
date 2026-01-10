@@ -1,0 +1,8 @@
+# This is a .git-send-email file.
+# For more details, see git-send-email(1).
+
+# Example:
+# smtpserver = smtp.example.com
+# smtpserverport = 587
+# smtpencryption = tls
+# smtpuser = user@example.com

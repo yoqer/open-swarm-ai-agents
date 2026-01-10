@@ -1,0 +1,15 @@
+#!/bin/sh
+#
+# An example hook script to check if the current branch is allowed to be rebased.
+# Called by "git rebase" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the rebase.
+#
+# To enable this hook, rename this file to "pre-rebase".
+
+# Example:
+# if git branch --list --no-color | grep -q "master"; then
+#   echo "Error: Cannot rebase master branch."
+#   exit 1
+# fi
+
+exit 0

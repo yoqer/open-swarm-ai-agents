@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# An example hook script to run after a merge.
+# Called by "git merge" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the merge.
+#
+# To enable this hook, rename this file to "post-merge".
+
+echo "Post-merge hook: Merge successful!"
+
+# Example: Install new dependencies after a merge
+# if [ -f requirements.txt ]; then
+#   pip install -r requirements.txt
+# fi
+
+exit 0

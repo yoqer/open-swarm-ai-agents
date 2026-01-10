@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that contains the commit log message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+MSG_FILE=$1
+MSG=$(cat "$MSG_FILE")
+
+# Check if the commit message starts with a valid type (e.g., feat, fix, docs, style, refactor, test, chore)
+if ! echo "$MSG" | grep -Eq "^(feat|fix|docs|style|refactor|test|chore)(\(.+\))?: .{1,50}"; then
+  echo "Error: Invalid commit message format."
+  echo "Commit message must start with a valid type (feat, fix, docs, style, refactor, test, chore) followed by a scope (optional) and a subject line (max 50 chars)."
+  echo "Example: feat(scope): Add new feature"
+  exit 1
+fi
+
+exit 0

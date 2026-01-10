@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# An example hook script to run after a rewrite.
+# Called by "git rebase" or "git commit --amend" with no arguments.
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to stop the rewrite.
+#
+# To enable this hook, rename this file to "post-rewrite".
+
+echo "Post-rewrite hook: Rewrite successful!"
+
+exit 0

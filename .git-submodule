@@ -1,0 +1,5 @@
+# This is a .git-submodule file.
+# For more details, see git-submodule(1).
+
+# Example:
+# add --name=submodule_name --branch=main https://github.com/example/submodule.git path/to/submodule

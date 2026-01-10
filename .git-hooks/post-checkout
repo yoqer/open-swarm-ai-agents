@@ -1,0 +1,16 @@
+#!/bin/sh
+#
+# An example hook script to run after a checkout.
+# Called by "git checkout" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the checkout.
+#
+# To enable this hook, rename this file to "post-checkout".
+
+echo "Post-checkout hook: Checkout successful!"
+
+# Example: Install new dependencies after a checkout
+# if [ -f requirements.txt ]; then
+#   pip install -r requirements.txt
+# fi
+
+exit 0

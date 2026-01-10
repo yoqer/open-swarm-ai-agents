@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# An example hook script to run before a patch is applied.
+# Called by "git am" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the apply.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+echo "Pre-applypatch hook: Applying patch..."
+
+exit 0

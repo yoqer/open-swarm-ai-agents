@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+# An example hook script to run after a commit.
+# Called by "git commit" with no arguments.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "post-commit".
+
+echo "Post-commit hook: Commit successful!"
+
+exit 0

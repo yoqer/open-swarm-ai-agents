@@ -1,0 +1,12 @@
+# This is a .mailmap file.
+# For more details, see git-shortlog(1) or git-blame(1).
+
+# Syntax:
+# C <canonical name> <canonical email>
+# C <canonical name> <commit email>
+# C <canonical name> <commit name> <canonical email>
+# C <canonical name> <commit name> <commit email>
+
+# Example:
+# John Doe <john.doe@example.com> <john@example.com>
+# John Doe <john.doe@example.com> Jane Doe <jane@example.com>
