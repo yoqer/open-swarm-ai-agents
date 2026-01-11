@@ -1,4 +1,4 @@
-# 🚀 Open Swarm AI Agents: Empowering Collaborative AI & Multi-Agent Systems
+# 🚀 Open Swarm AI Agents: Empowering Collaborative AI & Multi-Agent Systems.
 
 **Unlock the true potential of collaborative AI with Open Swarm AI Agents, an innovative open-source framework designed for seamless coordination of multi-agent systems. Unifying the best features from Arzule, CrewAI, AutoGen, Relevance AI, and Lindy, our platform simplifies the development of sophisticated AI applications. Built for the modern AI landscape, Open Swarm AI Agents empowers developers to create intelligent, cooperative AI solutions with unparalleled ease and efficiency.**
 
